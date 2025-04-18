@@ -6,7 +6,7 @@ SITENAME = 'Generative AI for Professionals'
 SITEURL = 'https://hargunoberoi.github.io/gap'
 
 PATH = 'content'
-OUTPUT_PATH = 'docs'
+OUTPUT_PATH = 'output'
 
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
