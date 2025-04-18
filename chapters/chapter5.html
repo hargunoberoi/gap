@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Agents - Generative AI for Professionals</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://hargunoberoi.github.io/gap/theme/css/style.css"
+    />
+
+    <style>
+      .navbar { background-color: #89CFF0 }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="https://hargunoberoi.github.io/gap/">
+          <img
+            src="https://hargunoberoi.github.io/gap/images/logo.png"
+            alt="Logo"
+            class="mr-2"
+            style="height: 40px; width: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/./"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/chapters.html"
+                >Chapters</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/materials.html"
+                >Materials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/tools.html"
+                >Tools</a
+              >
+            </li>
+ 
+            <li class="nav-item">
+              <button
+                class="dark-mode-toggle"
+                id="darkModeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle dark/light mode"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content" class="container mt-4">
+<article>
+  <header>
+    <h1>Agents</h1>
+    </div>
+  </header>
+
+  <div class="entry-content"><p><img alt="Agents" src="https://github.com/hargunoberoi/gap/blob/main/docs/images/c5.png?raw=true"></p>
+<h1>Chapter 5: Agents</h1>
+<h2>LLMs within Agentic Frameworks</h2>
+<p>When integrated into agent frameworks, LLMs gain the ability to interact with the world and perform complex tasks.</p>
+<h3>What are AI Agents?</h3>
+<ul>
+<li>Systems that perceive, decide, and act on their environment</li>
+<li>Autonomous or semi-autonomous problem solvers</li>
+<li>Combine LLMs with planning capabilities and tool use</li>
+</ul>
+<h3>Agent Architectures</h3>
+<ul>
+<li><strong>ReAct</strong>: Reason-then-Act paradigm</li>
+<li><strong>Reflexion</strong>: Self-reflection and improvement loops</li>
+<li><strong>AutoGPT</strong>: Goal-directed autonomous behavior</li>
+<li><strong>LangChain/LlamaIndex</strong>: Frameworks for building LLM-powered agents</li>
+</ul>
+<h3>Agent Design Principles</h3>
+<ul>
+<li>Clear goal specification</li>
+<li>Effective memory and state management</li>
+<li>Balanced autonomy and human oversight</li>
+<li>Transparent reasoning and decision-making</li>
+</ul>
+<h2>Tool Use: Web Search, Code Interpreters, APIs</h2>
+<p>Modern AI agents extend their capabilities by using external tools and services.</p>
+<h3>Web Search Integration</h3>
+<ul>
+<li>Real-time information retrieval</li>
+<li>Fact-checking and verification</li>
+<li>Addressing the knowledge cutoff limitation</li>
+</ul>
+<h3>Code Execution Environments</h3>
+<ul>
+<li><strong>Python Interpreters</strong>: Running code for data analysis</li>
+<li><strong>Jupyter Notebooks</strong>: Interactive computational environments</li>
+<li><strong>Sandboxed Execution</strong>: Safe code running in controlled environments</li>
+</ul>
+<h3>API and Service Connections</h3>
+<ul>
+<li><strong>Database Access</strong>: Querying and manipulating structured data</li>
+<li><strong>External Services</strong>: Weather, finance, maps, etc.</li>
+<li><strong>IoT Integration</strong>: Controlling physical devices</li>
+</ul>
+<h2>Retrieval-Augmented Generation (RAG)</h2>
+<p>RAG systems enhance LLMs with access to external knowledge bases and documents.</p>
+<h3>RAG Architecture</h3>
+<ul>
+<li><strong>Retrieval Component</strong>: Finding relevant information</li>
+<li><strong>Generation Component</strong>: Producing responses using retrieved context</li>
+<li><strong>Embedding Systems</strong>: Converting text to vector representations</li>
+</ul>
+<h3>Knowledge Base Construction</h3>
+<ul>
+<li>Document chunking and processing</li>
+<li>Vector database management</li>
+<li>Relevance filtering and ranking</li>
+</ul>
+<h3>Advanced RAG Techniques</h3>
+<ul>
+<li><strong>Hybrid Search</strong>: Combining semantic and keyword search</li>
+<li><strong>Multi-query Retrieval</strong>: Generating multiple search queries</li>
+<li><strong>Re-ranking</strong>: Improving result relevance after initial retrieval</li>
+</ul>
+<h2>Hands-on: Building an AI-powered Automation Workflow</h2>
+<p>In this exercise, we'll create a simple but functional AI agent using Zapier and LLM integration:</p>
+<ol>
+<li>
+<p><strong>Agent Design and Planning</strong></p>
+</li>
+<li>
+<p>Defining the agent's goals and capabilities</p>
+</li>
+<li>Planning the workflow and tool integrations</li>
+<li>
+<p>Setting up appropriate guardrails and safety measures</p>
+</li>
+<li>
+<p><strong>Zapier Integration</strong></p>
+</li>
+<li>
+<p>Connecting LLMs to various web services</p>
+</li>
+<li>Setting up triggers and actions</li>
+<li>
+<p>Creating multi-step workflows with conditional logic</p>
+</li>
+<li>
+<p><strong>Testing and Refinement</strong></p>
+</li>
+<li>Evaluating the agent's performance on various tasks</li>
+<li>Identifying and addressing failure modes</li>
+<li>Optimizing prompts and workflow connections</li>
+</ol>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Agents extend LLMs from conversational systems to action-taking entities</li>
+<li>Tool use dramatically expands what AI systems can accomplish</li>
+<li>RAG systems provide LLMs with access to specific, up-to-date information</li>
+<li>Effective agent design requires balancing autonomy with control</li>
+<li>The combination of planning, memory, and tool use enables complex task completion</li>
+</ul>
+<h2>Further Reading</h2>
+<ul>
+<li>"ReAct: Synergizing Reasoning and Acting in Language Models" by Yao et al.</li>
+<li>"Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks" by Lewis et al.</li>
+<li>"LangChain: Building applications with LLMs through composability" by Chase et al.</li>
+</ul>
+<h2>Next Chapter</h2>
+<p>In <a href="chapter6.html">Chapter 6: Open Source Models</a>, we'll explore the thriving ecosystem of open-source AI models and how they compare to proprietary alternatives.</p></div>
+</article>
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">© 2025 Hargun Singh Oberoi</span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function () {
+        // Execute immediately to avoid any delay
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const html = document.documentElement;
+
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem("theme") || "light";
+
+        // Apply theme immediately on page load
+        html.setAttribute("data-theme", savedTheme);
+
+        // Update icon based on current theme
+        if (savedTheme === "dark") {
+          darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+        // Add click handler
+        darkModeToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentTheme = html.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+          // Apply new theme
+          html.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+
+          // Update icon
+          this.innerHTML =
+            newTheme === "dark"
+              ? '<i class="fas fa-sun"></i>'
+              : '<i class="fas fa-moon"></i>';
+
+          console.log("Theme switched to:", newTheme); // Debug info
+        });
+      })();
+    </script>
+
+   </body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Working with LLMs - Generative AI for Professionals</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://hargunoberoi.github.io/gap/theme/css/style.css"
+    />
+
+    <style>
+      .navbar { background-color: #89CFF0 }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="https://hargunoberoi.github.io/gap/">
+          <img
+            src="https://hargunoberoi.github.io/gap/images/logo.png"
+            alt="Logo"
+            class="mr-2"
+            style="height: 40px; width: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/./"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/chapters.html"
+                >Chapters</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/materials.html"
+                >Materials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/tools.html"
+                >Tools</a
+              >
+            </li>
+ 
+            <li class="nav-item">
+              <button
+                class="dark-mode-toggle"
+                id="darkModeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle dark/light mode"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content" class="container mt-4">
+<article>
+  <header>
+    <h1>Working with LLMs</h1>
+    </div>
+  </header>
+
+  <div class="entry-content"><p><img alt="Working with LLMs" src="https://github.com/hargunoberoi/gap/blob/main/docs/images/c2.png?raw=true"></p>
+<h1>Chapter 2: Working with LLMs</h1>
+<h2>Token-based Thinking and Processing</h2>
+<p>Understanding how LLMs process text at the token level is crucial for effective interaction.</p>
+<h3>What are Tokens?</h3>
+<ul>
+<li>Subword units that represent the basic elements of text</li>
+<li>Words, parts of words, punctuation, or special characters</li>
+<li>The vocabulary size typically ranges from 30K-100K tokens</li>
+</ul>
+<h3>Token Economics</h3>
+<ul>
+<li>Models have token limits (context windows)</li>
+<li>Input tokens (prompt) + output tokens (response) = total token usage</li>
+<li>Different models have different context lengths:</li>
+<li>GPT-3.5: ~4K tokens</li>
+<li>GPT-4: 8K-32K tokens</li>
+<li>Claude 2: ~100K tokens</li>
+</ul>
+<h3>Thinking Like a Language Model</h3>
+<ul>
+<li>Models predict the next token based on previous tokens</li>
+<li>They have no intrinsic "understanding" of concepts</li>
+<li>Patterns and statistical relationships drive responses</li>
+</ul>
+<h2>Prompt Engineering Fundamentals</h2>
+<p>Prompt engineering is the art and science of crafting inputs to achieve optimal outputs from LLMs.</p>
+<h3>Basic Prompting Techniques</h3>
+<ul>
+<li><strong>Zero-shot</strong>: Direct questions without examples</li>
+<li><strong>Few-shot</strong>: Providing examples within the prompt</li>
+<li><strong>Chain-of-thought</strong>: Guiding the model through reasoning steps</li>
+<li><strong>Role-based</strong>: Assigning specific personas to the model</li>
+</ul>
+<h3>Prompt Components</h3>
+<ol>
+<li><strong>System Context</strong>: Setting the behavior and constraints</li>
+<li><strong>User Query</strong>: The specific instruction or question</li>
+<li><strong>Examples</strong>: Demonstrations of desired outputs</li>
+<li><strong>Guardrails</strong>: Limitations and guidance on responses</li>
+</ol>
+<h3>Common Patterns</h3>
+<ul>
+<li>"Act as a [role]"</li>
+<li>"Step by step, [task]"</li>
+<li>"Analyze this from the perspective of [expert]"</li>
+<li>"I'm going to give you [input], I want you to [desired action]"</li>
+</ul>
+<h2>Techniques to Optimize Model Performance</h2>
+<p>Advanced techniques can significantly enhance LLM capabilities and output quality.</p>
+<h3>Output Structuring</h3>
+<ul>
+<li>Requesting specific formats (JSON, Markdown, etc.)</li>
+<li>Creating templates for consistent responses</li>
+<li>Using delimiters to separate sections</li>
+</ul>
+<h3>Tuning Parameters</h3>
+<ul>
+<li><strong>Temperature</strong>: Controls randomness (0.0-1.0)</li>
+<li><strong>Top-p</strong>: Nucleus sampling for controlled variety</li>
+<li><strong>Frequency/presence penalties</strong>: Reduces repetition</li>
+</ul>
+<h3>Iterative Refinement</h3>
+<ul>
+<li>Critique-and-improve loops</li>
+<li>Breaking complex tasks into subtasks</li>
+<li>Using multiple prompts for different aspects of a problem</li>
+</ul>
+<h2>Hands-on: Structured Prompting Techniques</h2>
+<p>In this exercise, we'll apply different prompting techniques to refine AI-generated content:</p>
+<ol>
+<li>
+<p><strong>Content Creation Experiment</strong></p>
+</li>
+<li>
+<p>Comparing outputs with different system instructions</p>
+</li>
+<li>
+<p>Testing how temperature affects creativity vs. precision</p>
+</li>
+<li>
+<p><strong>Format Control</strong></p>
+</li>
+<li>
+<p>Structuring outputs in specific formats</p>
+</li>
+<li>
+<p>Using delimiters and templates</p>
+</li>
+<li>
+<p><strong>Prompt Debugging</strong></p>
+</li>
+<li>Identifying and fixing issues in problematic prompts</li>
+<li>Developing strategies for prompt iteration</li>
+</ol>
+<h2>Key Takeaways</h2>
+<ul>
+<li>Tokens are the fundamental units of LLM processing</li>
+<li>Understanding context windows and token economics is crucial for effective use</li>
+<li>Prompt design significantly impacts output quality and relevance</li>
+<li>Different techniques are suitable for different tasks and models</li>
+<li>Iterative refinement is key to achieving optimal results</li>
+</ul>
+<h2>Further Reading</h2>
+<ul>
+<li>"The Art of Prompt Engineering" by Lilian Weng</li>
+<li>"Prompt Engineering Guide" by DAIR.AI</li>
+<li>"Building LLM-powered Applications" by Simon Willison</li>
+</ul>
+<h2>Next Chapter</h2>
+<p>In <a href="chapter3.html">Chapter 3: Reasoning LLMs</a>, we'll explore the latest advancements in models specifically designed for logical reasoning and problem-solving.</p></div>
+</article>
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">© 2025 Hargun Singh Oberoi</span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function () {
+        // Execute immediately to avoid any delay
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const html = document.documentElement;
+
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem("theme") || "light";
+
+        // Apply theme immediately on page load
+        html.setAttribute("data-theme", savedTheme);
+
+        // Update icon based on current theme
+        if (savedTheme === "dark") {
+          darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+        // Add click handler
+        darkModeToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentTheme = html.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+          // Apply new theme
+          html.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+
+          // Update icon
+          this.innerHTML =
+            newTheme === "dark"
+              ? '<i class="fas fa-sun"></i>'
+              : '<i class="fas fa-moon"></i>';
+
+          console.log("Theme switched to:", newTheme); // Debug info
+        });
+      })();
+    </script>
+
+   </body>
+</html>
