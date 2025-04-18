@@ -3,7 +3,7 @@ Slug: chapter6
 Date: 2023-06-01
 Category: chapters
 
-![Open Source Models](/images/c6.png)
+![Open Source Models](https://github.com/hargunoberoi/gap/blob/main/docs/images/c6.png?raw=true)
 
 # Chapter 6: Open Source Models
 

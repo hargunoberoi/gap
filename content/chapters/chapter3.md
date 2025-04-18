@@ -3,7 +3,7 @@ Slug: chapter3
 Date: 2023-06-01
 Category: chapters
 
-![Reasoning LLMs](/images/c3.png)
+![Reasoning LLMs](https://github.com/hargunoberoi/gap/blob/main/docs/images/c3.png?raw=true)
 
 # Chapter 3: Reasoning LLMs
 

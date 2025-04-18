@@ -2,7 +2,7 @@ Title: Generative AI for Professionals
 date: 2025-04-18
 save_as: index.html
 
-![Generative AI for Professionals](/images/index.png)
+![Generative AI for Professionals](https://github.com/hargunoberoi/gap/blob/main/docs/images/index.png?raw=true)
 
 The Generative AI Essentials program is a structured training designed to build both foundational knowledge and hands-on expertise in Generative AI. The learning path follows a logical progression through comprehensive online resources and instructor-led sessions focusing on practical applications.
 

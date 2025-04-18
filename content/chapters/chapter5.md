@@ -3,7 +3,7 @@ Slug: chapter5
 Date: 2023-06-01
 Category: chapters
 
-![Agents](/images/c5.png)
+![Agents](https://github.com/hargunoberoi/gap/blob/main/docs/images/c5.png?raw=true)
 
 # Chapter 5: Agents
 

@@ -3,7 +3,7 @@
 
 AUTHOR = 'Hargun Singh Oberoi'
 SITENAME = 'Generative AI for Professionals'
-SITEURL = ''
+SITEURL = 'https://hargunoberoi.github.io/gap'
 
 PATH = 'content'
 OUTPUT_PATH = 'docs'
@@ -27,7 +27,7 @@ SOCIAL = ()
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 # Theme settings
 THEME = 'themes/simple'

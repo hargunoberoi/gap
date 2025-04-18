@@ -3,7 +3,7 @@ Slug: prologue
 Date: 2023-06-01
 Category: chapters
 
-![The Rise of AI](/images/c0.png)
+![The Rise of AI](https://github.com/hargunoberoi/gap/blob/main/docs/images/c0.png?raw=true)
 
 # Prologue: The Rise of AI
 

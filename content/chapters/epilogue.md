@@ -3,7 +3,7 @@ Slug: epilogue
 Date: 2023-06-01
 Category: chapters
 
-![Future Directions](/images/e.png)
+![Future Directions](https://github.com/hargunoberoi/gap/blob/main/docs/images/e.png?raw=true)
 
 # Epilogue: Future Directions
 

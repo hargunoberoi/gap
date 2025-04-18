@@ -3,7 +3,7 @@ Slug: chapter1
 Date: 2023-06-01
 Category: chapters
 
-![Understanding LLMs](/images/c1.png)
+![Understanding LLMs](https://github.com/hargunoberoi/gap/blob/main/docs/images/c1.png?raw=true)
 
 # Chapter 1: Understanding LLMs
 
@@ -49,8 +49,6 @@ LLM performance follows predictable scaling laws:
 - Performance improves smoothly with model size (parameters)
 - More training data yields better results, following power laws
 - Compute-optimal scaling balances model size and training tokens
-
-![Scaling Laws Graph](https://example.com/images/scaling_laws.png)
 
 ## Data Collection and Training Methodologies
 

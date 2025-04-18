@@ -3,7 +3,7 @@ Slug: chapter7
 Date: 2023-06-01
 Category: chapters
 
-![Using AI in the Workspace](/images/c7.png)
+![Using AI in the Workspace](https://github.com/hargunoberoi/gap/blob/main/docs/images/c7.png?raw=true)
 
 # Chapter 7: Using AI in the Workspace
 

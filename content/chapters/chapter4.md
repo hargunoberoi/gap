@@ -3,7 +3,7 @@ Slug: chapter4
 Date: 2023-06-01
 Category: chapters
 
-![Multimodal LLMs](/images/c4.png)
+![Multimodal LLMs](https://github.com/hargunoberoi/gap/blob/main/docs/images/c4.png?raw=true)
 
 # Chapter 4: Multimodal LLMs
 

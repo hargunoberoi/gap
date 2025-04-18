@@ -3,7 +3,7 @@ Slug: chapter2
 Date: 2023-06-01
 Category: chapters
 
-![Working with LLMs](/images/c2.png)
+![Working with LLMs](https://github.com/hargunoberoi/gap/blob/main/docs/images/c2.png?raw=true)
 
 # Chapter 2: Working with LLMs
 
