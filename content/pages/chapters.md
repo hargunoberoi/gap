@@ -15,7 +15,7 @@ Date: 2023-06-01
   <tbody>
     <tr>
       <td>Prologue</td>
-      <td><a href="../../chapters/prologue.html">The Rise of AI</a></td>
+      <td><a href="../chapters/prologue.html">The Rise of AI</a></td>
       <td>
         - Evolution from statistical machine learning to deep learning<br>
         - The emergence and impact of transformer models<br>
@@ -25,7 +25,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 1</td>
-      <td><a href="../../chapters/chapter1.html">Understanding LLMs</a></td>
+      <td><a href="../chapters/chapter1.html">Understanding LLMs</a></td>
       <td>
         - How Large Language Models are trained<br>
         - Architecture and scaling principles<br>
@@ -35,7 +35,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 2</td>
-      <td><a href="../../chapters/chapter2.html">Working with LLMs</a></td>
+      <td><a href="../chapters/chapter2.html">Working with LLMs</a></td>
       <td>
         - Token-based thinking and processing<br>
         - Prompt engineering fundamentals<br>
@@ -45,7 +45,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 3</td>
-      <td><a href="../../chapters/chapter3.html">Reasoning LLMs</a></td>
+      <td><a href="../chapters/chapter3.html">Reasoning LLMs</a></td>
       <td>
         - Latest advancements in reasoning models (OpenAI's o-series, Deepseek r1)<br>
         - Reinforcement learning for well-defined problems (math, coding)<br>
@@ -55,7 +55,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 4</td>
-      <td><a href="../../chapters/chapter4.html">Multimodal LLMs</a></td>
+      <td><a href="../chapters/chapter4.html">Multimodal LLMs</a></td>
       <td>
         - Omni models and different modalities<br>
         - Diffusion models for image generation<br>
@@ -65,7 +65,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 5</td>
-      <td><a href="../../chapters/chapter5.html">Agents</a></td>
+      <td><a href="../chapters/chapter5.html">Agents</a></td>
       <td>
         - LLMs within agentic frameworks<br>
         - Tool use: web search, code interpreters, APIs<br>
@@ -75,7 +75,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 6</td>
-      <td><a href="../../chapters/chapter6.html">Open Source Models</a></td>
+      <td><a href="../chapters/chapter6.html">Open Source Models</a></td>
       <td>
         - Alternatives to proprietary AI providers<br>
         - Open-source model ecosystems (Hugging Face, LLaMA, Whisper, Stable Diffusion)<br>
@@ -85,7 +85,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 7</td>
-      <td><a href="../../chapters/chapter7.html">Using AI in the Workspace</a></td>
+      <td><a href="../chapters/chapter7.html">Using AI in the Workspace</a></td>
       <td>
         - Best practices for workplace AI integration<br>
         - Task automation and workflow enhancement<br>
@@ -95,7 +95,7 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Epilogue</td>
-      <td><a href="../../chapters/epilogue.html">Future Directions</a></td>
+      <td><a href="../chapters/epilogue.html">Future Directions</a></td>
       <td>
         - Emerging trends and research frontiers<br>
         - The evolving AI landscape<br>
