@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <!-- Tipue Search -->
+    <link
+      rel="stylesheet"
+      href="{{ SITEURL }}/style/tipuesearch/tipuesearch.css"
+    />
+
+    {% if COLOR %}
+    <style>
+      .navbar {
+          background-color: {{ COLOR }}
+      }
+    </style>
+    {% endif %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{{ SITEURL }}">
+          <h3 class="course-title">{{ COURSE_NAME }}</h3>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarDefault">
+          <ul class="navbar-nav ml-auto">
+            {% for title, link in MENUITEMS %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ SITEURL }}/{{ link }}"
+                >{{ title }}</a
+              >
+            </li>
+            {% endfor %}
+            <form
+              class="form-inline my-2"
+              action="{{ SITEURL }}/search.html"
+              onsubmit="return validateForm(this.elements['q'].value);"
+            >
+              <div class="input-group input-group-sm">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="q"
+                  id="tipue_search_input"
+                  placeholder="Search"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content" class="container mt-4">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">Copyright {{ YEAR }} &copy; {{ AUTHOR }}</span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{{ SITEURL }}/style/tipuesearch/tipuesearch_set.js"></script>
+    <script src="{{ SITEURL }}/style/tipuesearch/tipuesearch.min.js"></script>
+
+    <script>
+      function validateForm(q) {
+        if (q.length === 0) {
+          return false;
+        }
+        return true;
+      }
+    </script>
+
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+    {% if TIPUE_SEARCH %}
+    <link
+      rel="stylesheet"
+      href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css"
+    />
+    {% endif %}
+
+    <link
+      rel="stylesheet"
+      href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css"
+    />
+
+    {% if COLOR %}
+    <style>
+      .navbar { background-color: {{ COLOR }} }
+    </style>
+    {% endif %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="{{ SITEURL }}/">
+          <img
+            src="{{ SITEURL }}/images/logo.png"
+            alt="Logo"
+            class="mr-2"
+            style="height: 40px; width: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarDefault">
+          <ul class="navbar-nav ml-auto">
+            {% for title, link in MENUITEMS %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ SITEURL }}/{{ link }}"
+                >{{ title }}</a
+              >
+            </li>
+            {% endfor %} {% if TIPUE_SEARCH %}
+            <form class="form-inline my-2" action="{{ SITEURL }}/search.html">
+              <div class="input-group input-group-sm">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="q"
+                  id="tipue_search_input"
+                  placeholder="Search"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="submit">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            {% endif %}
+
+            <li class="nav-item">
+              <button
+                class="dark-mode-toggle"
+                id="darkModeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle dark/light mode"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content" class="container mt-4">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">© {{ YEAR }} {{ AUTHOR }}</span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function () {
+        // Execute immediately to avoid any delay
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const html = document.documentElement;
+
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem("theme") || "light";
+
+        // Apply theme immediately on page load
+        html.setAttribute("data-theme", savedTheme);
+
+        // Update icon based on current theme
+        if (savedTheme === "dark") {
+          darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+        // Add click handler
+        darkModeToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentTheme = html.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+          // Apply new theme
+          html.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+
+          // Update icon
+          this.innerHTML =
+            newTheme === "dark"
+              ? '<i class="fas fa-sun"></i>'
+              : '<i class="fas fa-moon"></i>';
+
+          console.log("Theme switched to:", newTheme); // Debug info
+        });
+      })();
+    </script>
+
+    {% if TIPUE_SEARCH %}
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch_set.js"></script>
+    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#tipue_search_input").tipuesearch({
+          mode: "json",
+          contentLocation: "{{ SITEURL }}/tipuesearch_content.js",
+        });
+      });
+    </script>
+    {% endif %} {% block scripts %}{% endblock %}
+  </body>
+</html>
