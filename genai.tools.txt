@@ -1,0 +1,21 @@
+Name,Category,Link
+ChatGPT,Text AI Assistant,https://chat.openai.com/
+Claude,Text AI Assistant,https://claude.ai/
+Grok,Text AI Assistant,https://grok.x.ai/
+Gemini,Text AI Assistant,https://gemini.google.com/
+Perplexity,AI Search & Research,https://www.perplexity.ai/
+Notebook LM,Note Taking & Audio,https://notebooklm.google.com/
+Cursor,AI Code Editor,https://cursor.sh/
+VS Code,Code Editor,https://code.visualstudio.com/
+Hugging Face,AI Model Repository,https://huggingface.co/
+Firefly,Image Generation,https://firefly.adobe.com/
+Midjourney,Image Generation,https://www.midjourney.com/
+Runway ML,Video & Image Creation,https://runwayml.com/
+Pika Labs,Video Generation,https://www.pika.art/
+Sora,Video Generation,https://openai.com/sora
+ElevenLabs,Voice AI,https://elevenlabs.io/
+Jan.AI,Local AI Assistant,https://jan.ai/
+LM Studio,Local AI Assistant,https://lmstudio.ai/
+MSTY,Local AI Assistant,https://msty.app/
+Gamma,AI Presentation Creation,https://gamma.app/
+Heygen,AI Video Avatar Creation,https://www.heygen.com/ 

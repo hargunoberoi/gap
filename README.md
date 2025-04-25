@@ -23,3 +23,26 @@ This project is automatically deployed to GitHub Pages using GitHub Actions. Whe
 3. GitHub Pages will serve the content from this branch
 
 This means you don't need to manually build or commit the generated HTML files. Just push your content changes to the `pages` branch, and the site will be updated automatically.
+
+## Local Development
+
+If you want to build and preview the site locally:
+
+1. Make sure you have Python installed
+2. Run the build script:
+   ```bash
+   ./build.sh
+   ```
+3. To view the site locally:
+   ```bash
+   cd docs && python -m http.server
+   ```
+   Then open http://localhost:8000 in your browser
+
+## Project Structure
+
+- `/content`: Contains all site content (chapters, pages, images)
+- `/themes`: Contains the theme for the website
+- `/docs`: Generated site files (created by the build script)
+- `pelicanconf.py`: Pelican configuration file
+- `build.sh`: Simple script to build the site
