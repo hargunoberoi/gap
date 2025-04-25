@@ -13,7 +13,7 @@ if [ ! -d ".venv" ]; then
     echo "Creating virtual environment..."
     python3 -m venv .venv
     echo "Installing dependencies..."
-    ./venv/bin/pip install -r requirements.txt
+    ./.venv/bin/pip install -r requirements.txt
 fi
 
 # Activate virtual environment

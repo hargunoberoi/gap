@@ -85,22 +85,12 @@ Date: 2023-06-01
     </tr>
     <tr>
       <td>Chapter 7</td>
-      <td><a href="../chapters/chapter7.html">Using AI in the Workspace</a></td>
-      <td>
-        - Best practices for workplace AI integration<br>
-        - Task automation and workflow enhancement<br>
-        - Limitations, risks, and ethical considerations<br>
-        <strong>Hands-on:</strong> Designing AI-enhanced workflows for common business tasks
-      </td>
-    </tr>
-    <tr>
-      <td>Epilogue</td>
-      <td><a href="../chapters/epilogue.html">Future Directions</a></td>
+      <td><a href="../chapters/chapter7.html">Future with AI</a></td>
       <td>
         - Emerging trends and research frontiers<br>
         - The evolving AI landscape<br>
         - Preparing for future developments<br>
-        <strong>Final Project:</strong> Teams create an AI solution integrating multiple tools from the course
+        <strong>Hands-on:</strong> Teams create an AI solution integrating multiple tools from the course
       </td>
     </tr>
   </tbody>

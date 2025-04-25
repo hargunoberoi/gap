@@ -118,4 +118,4 @@ In this exercise, we'll work with open-source models to understand their capabil
 
 ## Next Chapter
 
-In [Chapter 7: Using AI in the Workspace](chapter7.html), we'll explore practical applications of AI for professional workflows and best practices for workplace integration.
+In [Chapter 7: Future with AI](chapter7.html), we'll explore emerging trends, the evolving AI landscape, and how to prepare for future developments in artificial intelligence.

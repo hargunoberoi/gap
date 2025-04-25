@@ -40,7 +40,7 @@ TIPUE_SEARCH = False
 MENUITEMS = [
     ('Home', './'),
     ('Chapters', 'pages/chapters.html'),
-    ('Materials', 'pages/materials.html'),
+    ('Material', 'pages/material.html'),
     ('Tools', 'pages/tools.html')
 ]
 
