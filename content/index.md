@@ -12,7 +12,7 @@ The Generative AI Essentials program is a structured training designed to build 
 
 1. Introduction to Artificial Intelligence
 2. Generative AI vs. Traditional AI
-3. Develop Your Prompt Engineering Skills
+3. Unlock the power of templates: Create impactful ChatGPT prompts with the template pattern
 4. Adobe Firefly Essential Training
 5. AI Show: Being Responsible with Generative AI
 
