@@ -159,3 +159,8 @@ cache/
 
 # ignore workspace
 .idea/workspace.xml
+
+# Generated files
+docs
+output/
+claude.md
