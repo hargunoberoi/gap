@@ -71,16 +71,6 @@ The Generative AI Essentials program is a structured training designed to build 
     </tr>
     <tr>
       <td>Chapter 4</td>
-      <td>Multimodal LLMs</td>
-      <td>
-        - Omni models and different modalities<br>
-        - Diffusion models for image generation<br>
-        - Text-to-speech, speech-to-text, and text-to-video technologies<br>
-        <strong>Hands-on:</strong> Creating and editing AI-generated media using Adobe Firefly and audio transcription with Whisper
-      </td>
-    </tr>
-    <tr>
-      <td>Chapter 5</td>
       <td>Agents</td>
       <td>
         - LLMs within agentic frameworks<br>
@@ -90,17 +80,7 @@ The Generative AI Essentials program is a structured training designed to build 
       </td>
     </tr>
     <tr>
-      <td>Chapter 6</td>
-      <td>Open Source Models</td>
-      <td>
-        - Alternatives to proprietary AI providers<br>
-        - Open-source model ecosystems (Hugging Face, LLaMA, Whisper, Stable Diffusion)<br>
-        - Deployment and fine-tuning considerations<br>
-        <strong>Hands-on:</strong> Working with open-source models locally and in the cloud
-      </td>
-    </tr>
-    <tr>
-      <td>Chapter 7</td>
+      <td>Chapter 5</td>
       <td>Future with AI</td>
       <td>
         - Emerging trends and research frontiers<br>
