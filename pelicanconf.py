@@ -39,6 +39,7 @@ TIPUE_SEARCH = False
 # Menu Items
 MENUITEMS = [
     ('Home', './'),
+    ('Summary', 'pages/summary.html'),
     ('Chapters', 'pages/chapters.html'),
     ('Material', 'pages/materials.html'),
     ('Tools', 'pages/tools.html')
