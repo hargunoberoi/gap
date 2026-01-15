@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Quick Reference Guide - Generative AI for Professionals</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://hargunoberoi.github.io/gap/theme/css/style.css"
+    />
+
+    <style>
+      .navbar { background-color: #89CFF0 }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="https://hargunoberoi.github.io/gap/">
+          <img
+            src="https://hargunoberoi.github.io/gap/images/logo.svg"
+            alt="Logo"
+            class="mr-2"
+            style="height: 40px; width: auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarDefault"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarDefault">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/./"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/summary.html"
+                >Summary</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/chapters.html"
+                >Chapters</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/materials.html"
+                >Material</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://hargunoberoi.github.io/gap/pages/tools.html"
+                >Tools</a
+              >
+            </li>
+ 
+            <li class="nav-item">
+              <button
+                class="dark-mode-toggle"
+                id="darkModeToggle"
+                aria-label="Toggle dark mode"
+                title="Toggle dark/light mode"
+              >
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="content" class="container mt-4">
+<article>
+  <header>
+    <h1>Quick Reference Guide</h1>
+  </header>
+
+  <div class="entry-content"><h1>Generative AI Training - Quick Reference Guide</h1>
+<h2>TL;DR - Model Evolution Summary</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Model Type</th>
+      <th>Data Type</th>
+      <th>Training Goal</th>
+      <th>Strengths</th>
+      <th>Weaknesses</th>
+      <th>Use Cases</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Machine Learning</strong></td>
+      <td>Structured/Tabular</td>
+      <td>Optimize algorithm parameters for specific task</td>
+      <td>Lightweight, fast training, interpretable</td>
+      <td>Limited to structured data, poor generalization</td>
+      <td>Credit scoring, fraud detection</td>
+    </tr>
+    <tr>
+      <td><strong>Deep Learning</strong></td>
+      <td>Unstructured (images, audio, video)</td>
+      <td>Optimize neural network weights using labeled data</td>
+      <td>Excellent on unstructured data, task-specific accuracy</td>
+      <td>Narrow experts, black box, requires large datasets</td>
+      <td>Image classification, object detection</td>
+    </tr>
+    <tr>
+      <td><strong>Base Models (GPT)</strong></td>
+      <td>Internet text</td>
+      <td>Predict next token in sequence</td>
+      <td>General knowledge, broad capabilities, self-supervised</td>
+      <td>Unmoderated, hallucinations, not task-optimized</td>
+      <td>Text completion, foundation for fine-tuning</td>
+    </tr>
+    <tr>
+      <td><strong>Assistant Models</strong></td>
+      <td>Q&A datasets with human labeling</td>
+      <td>Mimic helpful assistant responses</td>
+      <td>Conversational, follows instructions, retains base knowledge</td>
+      <td>Token simulators, no verification, spelling/math errors</td>
+      <td>Chatbots, content generation, summarization</td>
+    </tr>
+    <tr>
+      <td><strong>Reasoning Models</strong></td>
+      <td>Verifiable problems (math, coding)</td>
+      <td>Learn to generate reasoning chains via reinforcement learning</td>
+      <td>Better logical reasoning, novel problem solving</td>
+      <td>Slower inference, higher cost, longer outputs</td>
+      <td>Math problems, coding, complex logical tasks</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<h2>Machine Learning Models</h2>
+<p>Traditional machine learning models are algorithms written by humans and trained using structured data. The model itself is a mathematical function that provides the "best-guess" output for given inputs, such as a credit default predictor analyzing financial data.</p>
+<p><strong>Strengths:</strong> These models are lightweight and easy to train, making them ideal for structured tabular data with clear features.</p>
+<p><strong>Weaknesses:</strong> Performance degrades significantly outside the trained data domain, and they struggle with unstructured data like images, text, or audio.</p>
+<p><strong>Typical Workflow:</strong> Collect structured data, fit various algorithms such as k-nearest neighbors or decision trees, assess performance through validation, and deploy for inference on unseen data.</p>
+<hr>
+<h2>Deep Learning</h2>
+<p>Deep learning represents a paradigm shift: instead of hand-crafted algorithms, we use giant mathematical expressions called neural networks composed of simple operations. These networks require labeled data, and training involves optimizing millions or billions of parameters to achieve higher accuracy.</p>
+<p><strong>Where It Excels:</strong> Deep learning works exceptionally well on unstructured data such as images, audio, and video for tasks like classification, object detection, and sentiment analysis.</p>
+<p><strong>Limitations:</strong> Training requires significant computational time due to the large number of parameters. The learned relationships are often opaque (black box problem), and models tend to be narrow experts, excelling at specific tasks but lacking generalization across domains.</p>
+<hr>
+<h2>Large Language Models - Base Models</h2>
+<p>The goal of large language models like GPT is to create a general expert capable across several tasks, moving beyond narrow specialization. These are still neural networks, but they're based on the Transformer architecture published by Google DeepMind in 2016, rescoped to predict the next word in a sequence.</p>
+<h3>Training Process</h3>
+<p><strong>Data Collection:</strong> Massive amounts of text are gathered from the internet. Datasets like <a href="https://huggingface.co/datasets/OpenAssistant/oasst1/viewer/default/train?views%5B%5D=train&amp;row=42">Open Assistant</a> provide examples of this scale.</p>
+<p><strong>Tokenization:</strong> Text is converted into sequences of symbols called tokens. Starting with a stream of bytes, Byte Pair Encoding (BPE) merges the most common token pairs in the data. Continuing this process allows individual tokens to hold more information, with some tokens representing entire words. This increases the total vocabulary (GPT-2 used approximately 50,000 tokens).</p>
+<p><strong>Neural Network Training:</strong> A fixed set of tokens is passed to the model based on its context length. The model outputs a probability distribution over all possible tokens. Since the next token is available in the data itself, the dataset is self-labeled. The training goal is to have the model predict high probability for the correct next token and low probability for others. After training, the model learns to produce sequences that simulate what it saw in training data.</p>
+<h3>Base Model Characteristics</h3>
+<p>Base models learn general representations and acquire substantial knowledge. They can be "prompted" into becoming assistants by using input sequences to guide future token behavior. However, they are not true assistants, are not moderated, and can hallucinate information.</p>
+<p><strong>Special Tokens:</strong> The <code>&lt;|endoftext|&gt;</code> token is introduced in training data to implicitly teach the model when a sequence should end. Through training, the model learns to assign high probability to this token when a sequence seems complete.</p>
+<p><strong>Temperature Parameter:</strong> The output probability distribution can be modified using temperature. Lower temperature makes the most likely tokens even more likely, producing deterministic outputs. Higher temperature gives lower-probability tokens a chance to be sampled, increasing creativity and randomness.</p>
+<hr>
+<h2>Assistant Model Training</h2>
+<p>After a base model is trained on internet data, high-quality question-and-answer datasets are collected through human labelers and experts. These datasets, such as <a href="https://huggingface.co/datasets/OpenAssistant/oasst1/viewer/default/train?views%5B%5D=train&amp;row=42">Open Assistant</a>, are enhanced with special tokens to organize conversations into a protocol separating system, user, and assistant tags. The model must learn to mimic assistant responses.</p>
+<p>This data is tokenized as before, and training resumes using the base model as a starting point. OpenAI observed that the new model retains the general knowledge of the base model but adopts the persona of a helpful assistant, making it suitable for applications like chatbots.</p>
+<h3>Prompting and Behavior</h3>
+<p>Assistant model behavior can be modified through prompting. Specifically, assigning roles, giving clear instructions, providing context, and offering several examples significantly improves the model's ability to behave as expected.</p>
+<p>Assistant models can be thought of as having two types of memory: stored memory (information learned through training) and working memory (additional tokens provided in the context window).</p>
+<h3>Scaling Observations</h3>
+<p>Empirically, assistant model performance increases with model size, leading companies to train increasingly larger models.</p>
+<h3>Critical Risks</h3>
+<p>Assistant models are token simulators, meaning there is no reflection or sanity checks. Output from these models cannot be trusted as source of truth. They may appear like experts, but their outputs are based on imitating training data, not critical thought.</p>
+<p><strong>Common Failures:</strong> Models fail with spelling and math. Some issues stem from tokenization choices, while others are inherent to the nature of LLMs as probabilistic token generators.</p>
+<hr>
+<h2>Thinking Models and Reasoning</h2>
+<p>Despite efforts to make assistant models better at logical problems, issues persisted. The fundamental problem is that assistant models could output an incorrect token early in a sequence, leading to cascading errors downstream.</p>
+<p>Several methods were attempted to train assistant models better, but without success. The breakthrough came from using reinforcement learning. OpenAI succeeded with their o1 model, though details were initially unclear. Later in 2025, DeepSeek published a paper outlining exactly how to train a reasoning model.</p>
+<h3>DeepSeek's Approach</h3>
+<p>The central idea was to use problems from a verifiable domain (math) and make the model generate several outputs, then imitate the outputs that were successful.</p>
+<p><strong>Data:</strong> Math problems such as those from <a href="https://huggingface.co/datasets/openai/gsm8k/viewer/main/train?row=1">GSM8K Dataset</a>.</p>
+<p><strong>Starting Point:</strong> A pretrained assistant model.</p>
+<p><strong>Output Format:</strong> A thinking model instructed to put its reasoning within <code>&lt;think&gt;</code> tags and the final answer within <code>&lt;answer&gt;</code> tags.</p>
+<p><strong>Key Discovery:</strong> DeepSeek observed that the model by itself learns to output a large number of tokens as part of its thinking during training. This is something researchers had previously tried to encourage through prompts like "let's think step by step," but now the model develops this behavior organically through reinforcement learning.</p>
+<h3>Significance</h3>
+<p>Reasoning models represent "true" machine intelligence because machines can learn to come up with novel solutions given enough training, rather than simply pattern matching from training data.</p>
+<p><strong>Advantages:</strong> Reasoning models are more likely to produce correct answers to logical tasks and can develop multi-step reasoning strategies.</p>
+<p><strong>Disadvantages:</strong> These models produce a large number of tokens during the reasoning process, which leads to longer wait times and increased cost of inference.</p>
+<hr>
+<h2>Tools and Extensions</h2>
+<p>Beyond prompting and reasoning models, we can optimize model performance by giving it access to tools.</p>
+<p><strong>Search Tools:</strong> Fetch latest information from the internet and place it in the model's context, addressing knowledge cutoff limitations.</p>
+<p><strong>Code Interpreter Tools:</strong> Run code and provide the model with execution output, enabling accurate computational tasks.</p>
+<p><strong>Important Clarification:</strong> Models themselves cannot search the internet or run code. Programmers must write software to integrate search APIs or code runtimes along with the model. Models can be taught (through training data or in-context learning) to use additional special tokens to trigger search, code execution, or other tools.</p>
+<hr>
+<h2>Key Terminology</h2>
+<p><strong>Tokens:</strong> Basic units of text (words, subwords, or characters) that models process. Tokenization converts raw text into these discrete units.</p>
+<p><strong>Context Length:</strong> The maximum number of tokens a model can process at once. Modern models range from 4K to 200K+ tokens.</p>
+<p><strong>Model Parameters:</strong> The learned weights in the neural network, typically billions in modern LLMs. More parameters generally mean more capacity but slower inference.</p>
+<p><strong>Model Type:</strong> Classification into Base Model (raw next-token predictor), Assistant Model (fine-tuned for helpfulness), or Reasoning Model (trained with reinforcement learning for logical tasks).</p>
+<hr>
+<h2>Best Practices and Recommendations</h2>
+<p><strong>Critical Warning:</strong> Don't take assistant model outputs as source of truth. Outputs can be convincing but incorrect, with no built-in verification or fact-checking.</p>
+<p><strong>Use Prompting Techniques:</strong> Optimize model output by assigning clear roles, providing explicit instructions, offering relevant context, and including examples (few-shot prompting).</p>
+<p><strong>Leverage Tools:</strong> Use search tools for up-to-date information that exceeds the model's knowledge cutoff. Use code interpreters to offload calculations and tasks that models inherently struggle with, such as arithmetic.</p>
+<p><strong>Choose the Right Model:</strong> Use thinking models for logical problems requiring multi-step reasoning. For general assistance and conversational tasks, standard assistant models are more cost-effective.</p>
+<hr>
+<h2>Current Capabilities and Future Directions</h2>
+<p><strong>Multimodal Capabilities:</strong> Current models can process images, audio, and video by converting them into tokens alongside text. This enables vision tasks, speech processing, and multimedia understanding.</p>
+<p><strong>Agentic Systems:</strong> The future involves models with tools talking to other models, enabling multi-agent collaboration and complex workflow automation.</p>
+<p><strong>Local LLMs:</strong> Running models on personal devices offers privacy and cost benefits, with open-source alternatives becoming increasingly capable.</p>
+<p><strong>Enhanced Multimodal:</strong> Continued improvements in image generation, real-time video understanding, and audio synthesis are expected.</p>
+<hr>
+<style>
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+</style></div>
+</article>
+    </main>
+
+    <footer class="footer mt-5 py-3 bg-light">
+      <div class="container">
+        <span class="text-muted">© 2025 Hargun Singh Oberoi</span>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Script -->
+    <script>
+      (function () {
+        // Execute immediately to avoid any delay
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const html = document.documentElement;
+
+        // Check for saved theme preference or use default
+        const savedTheme = localStorage.getItem("theme") || "light";
+
+        // Apply theme immediately on page load
+        html.setAttribute("data-theme", savedTheme);
+
+        // Update icon based on current theme
+        if (savedTheme === "dark") {
+          darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        } else {
+          darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        }
+
+        // Add click handler
+        darkModeToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          const currentTheme = html.getAttribute("data-theme");
+          const newTheme = currentTheme === "dark" ? "light" : "dark";
+
+          // Apply new theme
+          html.setAttribute("data-theme", newTheme);
+          localStorage.setItem("theme", newTheme);
+
+          // Update icon
+          this.innerHTML =
+            newTheme === "dark"
+              ? '<i class="fas fa-sun"></i>'
+              : '<i class="fas fa-moon"></i>';
+
+          console.log("Theme switched to:", newTheme); // Debug info
+        });
+      })();
+    </script>
+
+   </body>
+</html>
