@@ -169,7 +169,7 @@
 <h2>Large Language Models - Base Models</h2>
 <p>The goal of large language models like GPT is to create a general expert capable across several tasks, moving beyond narrow specialization. These are still neural networks, but they're based on the Transformer architecture published by Google DeepMind in 2016, rescoped to predict the next word in a sequence.</p>
 <h3>Training Process</h3>
-<p><strong>Data Collection:</strong> Massive amounts of text are gathered from the internet. Datasets like <a href="https://huggingface.co/datasets/OpenAssistant/oasst1/viewer/default/train?views%5B%5D=train&amp;row=42">Open Assistant</a> provide examples of this scale.</p>
+<p><strong>Data Collection:</strong> Massive amounts of text are gathered from the internet. Datasets like <a href="https://huggingface.co/datasets/HuggingFaceFW/fineweb">Fineweb</a> provide examples of this scale.</p>
 <p><strong>Tokenization:</strong> Text is converted into sequences of symbols called tokens. Starting with a stream of bytes, Byte Pair Encoding (BPE) merges the most common token pairs in the data. Continuing this process allows individual tokens to hold more information, with some tokens representing entire words. This increases the total vocabulary (GPT-2 used approximately 50,000 tokens).</p>
 <p><strong>Neural Network Training:</strong> A fixed set of tokens is passed to the model based on its context length. The model outputs a probability distribution over all possible tokens. Since the next token is available in the data itself, the dataset is self-labeled. The training goal is to have the model predict high probability for the correct next token and low probability for others. After training, the model learns to produce sequences that simulate what it saw in training data.</p>
 <h3>Base Model Characteristics</h3>
@@ -226,6 +226,31 @@
 <p><strong>Agentic Systems:</strong> The future involves models with tools talking to other models, enabling multi-agent collaboration and complex workflow automation.</p>
 <p><strong>Local LLMs:</strong> Running models on personal devices offers privacy and cost benefits, with open-source alternatives becoming increasingly capable.</p>
 <p><strong>Enhanced Multimodal:</strong> Continued improvements in image generation, real-time video understanding, and audio synthesis are expected.</p>
+<hr>
+<h2>Additional Links</h2>
+<h3>Papers</h3>
+<ul>
+<li><a href="https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf">GPT-2 Paper (2019)</a> - Language Models are Unsupervised Multitask Learners - foundational work on base models</li>
+<li><a href="https://arxiv.org/pdf/2005.14165">GPT-3 Paper (2020)</a> - Language Models are Few-Shot Learners - scaling laws and emergent capabilities</li>
+<li><a href="https://arxiv.org/pdf/2203.02155">InstructGPT Paper (2022)</a> - Training language models to follow instructions with human feedback (RLHF)</li>
+<li><a href="https://arxiv.org/pdf/2501.12948">DeepSeek-R1 Paper (2025)</a> - Technical paper detailing how to train reasoning models using reinforcement learning</li>
+</ul>
+<h3>Datasets</h3>
+<ul>
+<li><a href="https://huggingface.co/datasets/OpenAssistant/oasst1/viewer/default/train?views[]=train&amp;row=42">Open Assistant</a> - High-quality conversational dataset for training assistant models</li>
+<li><a href="https://atlas.nomic.ai/data/stingning/ultrachat-1/map">UltraChat</a> - Large-scale dialogue dataset with interactive visualization</li>
+<li><a href="https://huggingface.co/datasets/allenai/olmo-2-hard-coded">OLMo Hard-Coded</a> - Curated dataset from Allen Institute for AI</li>
+<li><a href="https://huggingface.co/datasets/HuggingFaceFW/fineweb">FineWeb</a> - Large web-crawled dataset for pretraining language models</li>
+<li><a href="https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified">Big-Math-RL-Verified</a> - Math problems with verified solutions for training reasoning models</li>
+</ul>
+<h3>Useful Demos</h3>
+<ul>
+<li><a href="https://teachablemachine.withgoogle.com/train/image">Teachable Machine</a> - GUI app for training simple machine learning models without code</li>
+<li><a href="https://artefact2.github.io/llm-sampling/index.xhtml">LLM Probability Distribution</a> - Interactive visualization of how LLMs sample tokens based on probability</li>
+<li><a href="https://bbycroft.net/llm">BBycroft LLM Visualization</a> - Visual explanation of how transformers and LLMs work internally</li>
+<li><a href="https://tiktokenizer.vercel.app/">Tiktokenizer</a> - Interactive tool to see how text gets tokenized by different models</li>
+<li><a href="https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation">SolidGoldMagikarp</a> - Exploration of unusual tokens and their effects on LLM behavior</li>
+</ul>
 <hr>
 <style>
 table {
