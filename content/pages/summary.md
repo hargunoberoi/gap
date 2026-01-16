@@ -91,7 +91,7 @@ The goal of large language models like GPT is to create a general expert capable
 
 ### Training Process
 
-**Data Collection:** Massive amounts of text are gathered from the internet. Datasets like [Open Assistant](https://huggingface.co/datasets/OpenAssistant/oasst1/viewer/default/train?views%5B%5D=train&row=42) provide examples of this scale.
+**Data Collection:** Massive amounts of text are gathered from the internet. Datasets like [Fineweb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) provide examples of this scale.
 
 **Tokenization:** Text is converted into sequences of symbols called tokens. Starting with a stream of bytes, Byte Pair Encoding (BPE) merges the most common token pairs in the data. Continuing this process allows individual tokens to hold more information, with some tokens representing entire words. This increases the total vocabulary (GPT-2 used approximately 50,000 tokens).
 
@@ -204,6 +204,33 @@ Beyond prompting and reasoning models, we can optimize model performance by givi
 **Local LLMs:** Running models on personal devices offers privacy and cost benefits, with open-source alternatives becoming increasingly capable.
 
 **Enhanced Multimodal:** Continued improvements in image generation, real-time video understanding, and audio synthesis are expected.
+
+---
+
+## Additional Links
+
+### Papers
+
+- [GPT-2 Paper (2019)](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf) - Language Models are Unsupervised Multitask Learners - foundational work on base models
+- [GPT-3 Paper (2020)](https://arxiv.org/pdf/2005.14165) - Language Models are Few-Shot Learners - scaling laws and emergent capabilities
+- [InstructGPT Paper (2022)](https://arxiv.org/pdf/2203.02155) - Training language models to follow instructions with human feedback (RLHF)
+- [DeepSeek-R1 Paper (2025)](https://arxiv.org/pdf/2501.12948) - Technical paper detailing how to train reasoning models using reinforcement learning
+
+### Datasets
+
+- [Open Assistant](https://huggingface.co/datasets/OpenAssistant/oasst1/viewer/default/train?views[]=train&row=42) - High-quality conversational dataset for training assistant models
+- [UltraChat](https://atlas.nomic.ai/data/stingning/ultrachat-1/map) - Large-scale dialogue dataset with interactive visualization
+- [OLMo Hard-Coded](https://huggingface.co/datasets/allenai/olmo-2-hard-coded) - Curated dataset from Allen Institute for AI
+- [FineWeb](https://huggingface.co/datasets/HuggingFaceFW/fineweb) - Large web-crawled dataset for pretraining language models
+- [Big-Math-RL-Verified](https://huggingface.co/datasets/SynthLabsAI/Big-Math-RL-Verified) - Math problems with verified solutions for training reasoning models
+
+### Useful Demos
+
+- [Teachable Machine](https://teachablemachine.withgoogle.com/train/image) - GUI app for training simple machine learning models without code
+- [LLM Probability Distribution](https://artefact2.github.io/llm-sampling/index.xhtml) - Interactive visualization of how LLMs sample tokens based on probability
+- [BBycroft LLM Visualization](https://bbycroft.net/llm) - Visual explanation of how transformers and LLMs work internally
+- [Tiktokenizer](https://tiktokenizer.vercel.app/) - Interactive tool to see how text gets tokenized by different models
+- [SolidGoldMagikarp](https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation) - Exploration of unusual tokens and their effects on LLM behavior
 
 ---
 
